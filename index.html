@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA テスト</title>
+    <script src="https://google.com" async defer></script>
+</head>
+<body>
+    <h2>reCAPTCHA デモフォーム</h2>
+    <form action="/verify" method="POST">
+        <label>名前: <input type="text" name="name" required></label><br><br>
+        <!-- ⚠️ 後でここをGoogleのサイトキーに書き換えます -->
+        <div class="g-recaptcha" data-sitekey="あなたのサイトキー"></div>
+        <br>
+        <button type="submit">送信する</button>
+    </form>
+</body>
+</html>
